@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:backgroundTint="@color/recyclerViewBgColor"
+    android:layout_margin="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/map_image"
+            android:layout_marginStart="27dp"
+            android:layout_marginEnd="27dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="27dp"
+            android:paddingEnd="27dp">
+
+            <TextView
+                android:id="@+id/cityNameTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/city_name_bg"
+                android:paddingStart="10dp"
+                android:paddingTop="4dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="4dp"
+                android:text="City Name"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/StateNameTv"
+                android:text="State Name"
+                android:background="@drawable/city_name_bg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/white"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="29dp"
+            android:layout_marginEnd="29dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="22dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/RideIdTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ride Id: "
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView
+                android:id="@+id/OriginStationTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Origin Station: "
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView
+                android:id="@+id/station_Path_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="station_path: "
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView
+                android:id="@+id/DateTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date: "
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView
+                android:id="@+id/distanceTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Distance: "
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:layout_marginBottom="12dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
