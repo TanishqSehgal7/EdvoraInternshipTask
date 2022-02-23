@@ -5,7 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:backgroundTint="@color/fragmentBg"
+    android:background="@color/fragmentBg">
 
 
     <RelativeLayout
@@ -31,6 +33,7 @@
             android:id="@+id/tablayout"
             app:tabSelectedTextColor="@color/white"
             app:tabUnboundedRipple="true"
+            android:background="@color/fragmentBg"
             app:tabIndicatorFullWidth="false"
             app:tabTextAppearance="@style/TabLayoutStyle"
             app:tabIndicatorAnimationMode="linear"
