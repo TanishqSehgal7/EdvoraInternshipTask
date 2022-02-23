@@ -170,7 +170,7 @@ class NearestRidesFragment : Fragment() {
     }
 }
 
-class MyJSONComparator : Comparator<JSONObject> {
+class MyJSONComparator : Comparator<JSONObject> { // will be used for sorting the json array on the basis of distance
 
     override fun compare(obj1: JSONObject?, obj2: JSONObject?): Int {
         return value1.compareTo(value2)
